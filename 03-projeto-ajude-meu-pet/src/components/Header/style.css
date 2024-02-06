@@ -1,0 +1,72 @@
+header {
+  background-color: var(--main-bg-color);
+  opacity: 0.9;
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+}
+
+#titulo-sistema-header img {
+  margin-right: 10px;
+  width: 100px;
+}
+
+#titulo-sistema-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 3em;
+  color: black;
+}
+
+#titulo-sistema-header h3:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
+  box-shadow: -2px 4px 30px 4px rgb(123, 151, 0);
+}
+
+#titulo-sistema-header img:hover {
+  transform: scale(1.05);
+  transition: transform .5s;
+}
+
+.ul-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.li-item:hover {
+  transform: scale(1.2);
+  transition: transform .7s;
+}
+
+@media (max-width: 600px) {
+  #titulo-sistema-header {
+    width: 50px;
+    padding-left: 1em;
+  }
+
+  #titulo-sistema-header h3 {
+    display: none;
+  }
+
+  nav {
+    font-size: small;
+    display: flex;
+    padding: 2em;
+  }
+
+  li {
+    padding-right: 25px;
+  }
+}
